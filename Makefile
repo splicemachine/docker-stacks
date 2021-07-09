@@ -4,7 +4,7 @@
 
 # Use bash for inline if-statements in arch_patch target
 SHELL:=bash
-OWNER?=jupyter
+OWNER?=splicemachine
 
 # Need to list the images in build dependency order
 ALL_IMAGES:=base-notebook \
@@ -14,7 +14,8 @@ ALL_IMAGES:=base-notebook \
 	tensorflow-notebook \
 	datascience-notebook \
 	pyspark-notebook \
-	all-spark-notebook
+	all-spark-notebook \
+        splice-notebook
 
 # Enable BuildKit for Docker build
 export DOCKER_BUILDKIT:=1
